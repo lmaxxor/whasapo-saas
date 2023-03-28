@@ -210,7 +210,7 @@ export function PlansManagerGrid(props) {
                             <TableCell align="center">{row.users || '-'}</TableCell>
                             <TableCell align="center">{row.connections || '-'}</TableCell>
                             <TableCell align="center">{row.queues || '-'}</TableCell>
-                            <TableCell align="center">{row.value.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' }) || '-'}</TableCell>
+                            <TableCell align="center">{row.value.toLocaleString('es', { style: 'currency', currency: 'PEN' }) || '-'}</TableCell>
                         </TableRow>
                     ))}
                 </TableBody>
@@ -312,7 +312,7 @@ export default function PlansManager() {
             users: data.users || 0,
             connections: data.connections || 0,
             queues: data.queues || 0,
-            value: data.value.toLocaleString('pt-br', { minimumFractionDigits: 2 }) || 0
+            value: data.value.toLocaleString('es', { minimumFractionDigits: 2 }) || 0
         })
     }
 
